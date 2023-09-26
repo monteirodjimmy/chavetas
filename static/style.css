@@ -1,0 +1,13 @@
+body {
+    background-color: rgb(150, 239, 249);
+}
+
+form {
+    background-color: aliceblue;
+}
+
+h1{
+    color: brown;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

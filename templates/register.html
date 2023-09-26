@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <!-- Use GET not POST -->
+    <div id="form">
+        <form method="get">
+            First Name<input type="text" name="firstname"><br>
+            Last Name: <input type="text"name="lastname"><br>
+            Email: <input type="email" required name="email"><br>
+            Password: <input type="password" name="password" min="6"> <br>
+            Birthday <input type="date" name="date" ><br>
+            Gender: <br>
+            <input type="radio" name="gender" value="Male">Male <br>
+            <input type="radio" name="gender" value="Female" >Female <br>
+            Pets: <br>
+            <input type="checkbox" name="cat" >Cat <br>
+            <input type="checkbox" name="dog" >Dog <br>
+            <input type="checkbox" name="lola" >Lola <br>
+            Cars: <br>
+            <select name="cars" id="">
+                <option value="volvo"> Volvo </option>
+                <option value="volks wagen"> Volks Wagen</option>
+                <option value="fiat"> FIAT </option>
+            </select> <br>
+            <input type="submit" value="Register">
+            <input type="reset">
+        </form>
+
+    </div>
+    
+    
+</body>
+</html>
+http://127.0.0.1:5500/templates/register.html?
+firstname=Mateus
+&lastname=Monteiro
+&email=mateus.rodrigues%40itriad.org.br
+&password=
+&date=2023-09-14
+&gender=Female
+&dog=on
+&cars=volks+wagen
