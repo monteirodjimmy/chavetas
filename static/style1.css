@@ -1,0 +1,69 @@
+body {
+    background-color: aquamarine;
+    background-image: url(/static/homepagebackground.jpg);
+    background-size: cover;
+}
+
+h1{
+    color:rgb(165, 42, 42);
+    text-align: center;
+    border: 5px solid rgba(240, 132, 132,0.4);
+    cursor: wait;
+}
+
+h2{
+    color:rgb(42, 165, 71);
+    text-align: center;
+    border: 5px solid rgba(240, 132, 132,0.4);
+    cursor: pointer;
+}
+
+li{
+    list-style: none;
+    display: block;
+}
+
+.textlist{
+    color: rgb(84, 0, 0);
+}
+
+#lorem1 {
+    background-color: rgba(55, 120, 75, 0.352);
+    color: aliceblue;
+}
+
+#lorem1 p{
+    
+    /* text-transform: uppercase; */
+    line-height: 25px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 90%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+/*
+Cascading Style Sheets at the most basic level it indicates that the order of CSS rules matter. 
+
+
+.class
+#id
+*
+element
+element, element
+element element
+element > element
+element + element
+:hover
+:last-child
+:first-child
+!important (not recommended)
+
+
+What seletors win out in the cascade depends on:
+-Specificity
+-Importance
+-Source Order
+*/
