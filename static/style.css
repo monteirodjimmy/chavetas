@@ -2,11 +2,31 @@
     background-color: rgb(6, 47, 102);
 }
 
-form {
-    background-color: aliceblue;
+.conteiner {
+    color: azure;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.boxmodel {
+   border-right: 5px solid red ;
+    padding-top: 70px;
+    padding-bottom: 80px;
+    padding-left: 50px;
+    padding-right: 300px;
+    margin: 20px;
+}
+
+#dadosdiametro {
+    border: 5px solid red ;
+    float: right;
+    margin-left: 100px;
 }
 
 h1{
+    border-bottom: 5px solid azure;
     color: brown;
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -15,4 +35,21 @@ h1{
     color: brown;
     font-size: medium;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+#chavetas_desenho {
+    float: right;
+}
+
+#engrenagem {
+    width: 350px;
+    transition: all 3s;
+    &:hover {
+      transform: rotate(1080deg);
+    }
+    
+}
+
+option {
+    width: auto;
 }

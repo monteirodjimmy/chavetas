@@ -23,6 +23,8 @@ li{
     display: block;
 }
 
+
+
 .textlist{
     color: rgb(84, 0, 0);
 }
@@ -30,6 +32,11 @@ li{
 #lorem1 {
     background-color: rgba(55, 120, 75, 0.352);
     color: aliceblue;
+    font-size: 15px;
+}
+
+span {
+    font-size: 2em;
 }
 
 #lorem1 p{
@@ -42,8 +49,46 @@ li{
     font-family: 'Times New Roman', Times, serif;
 }
 
+#lifewild {
+    color:rgb(42, 165, 71);
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    font-size: 3em;
+    font-family: fantasy;
+    border-bottom: 2px solid pink;
+    border-right: 2px solid pink;
+    width: 400px;
+    box-shadow: 10px 10px lightblue;
+}
 
+#flexboxes {
+    width: 450px;
+    height: 300px;
+    transition: all 1s;
+}
+.flx:hover {
+    transform: scale(1.1);
+}
+.conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
+.droplet {
+    background: mediumaquamarine;
+    border-radius: 2% 50%;
+    height: 100px;
+    margin: 100px;
+    transition: all 3s;
+    transition-timing: ease-in-out;
+    width: 100px;
+    
+    &:hover {
+      transform: rotate(1080deg);
+    }
+  }
 /*
 Cascading Style Sheets at the most basic level it indicates that the order of CSS rules matter. 
 

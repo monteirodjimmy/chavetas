@@ -8,21 +8,35 @@
 </head>
 <body id="chavetas">
     <h1>CHAVETAS</h1>
-    Diâmetro do eixo <br>
-    Acima de - até:
-    <select id="diametros">
-        <option value="6-8">6-8</option>
-        <option value="8-10">8-10</option>
-        <option value="10-12">10-12</option>
-        <option value="12-17">12-17</option>
-        <option value="17-22">17-22</option>
-        <option value="22-30">22-30</option>
-        <option value="30-38">30-38</option>
-        <option value="38-44">38-44</option>
-        <option value="44-50">44-50</option>
-        <option value="50-58">50-58</option>
-        <option value="58-65">58-65</option>
-        <option value="65-75">65-75</option>
-    </select>
+    <div class="conteiner">
+        <div  class="boxmodel">
+            <img src="/static/engenagem.png" id="engrenagem" class="engrenagem">
+               <div id="dadosdiametro">
+                Diâmetro do eixo <br>
+                Acima de - até:
+                    <form method="get">
+                    <select id="diametros">
+                        <option value="6-8">6-8</option>
+                        <option value="8-10">8-10</option>
+                        <option value="10-12">10-12</option>
+                        <option value="12-17">12-17</option>
+                        <option value="17-22">17-22</option>
+                        <option value="22-30">22-30</option>
+                        <option value="30-38">30-38</option>
+                        <option value="38-44">38-44</option>
+                        <option value="44-50">44-50</option>
+                        <option value="50-58">50-58</option>
+                        <option value="58-65">58-65</option>
+                        <option value="65-75">65-75</option>
+                    </select>
+                    </form>
+                </div>
+        </div>
+        <div id="resultados" class="boxmodel"> 
+        <h2> Dados da sua chaveta:</h2> <br>
+            Largua (b):
+
+        </div>
+    </div>
 </body>
 </html>
