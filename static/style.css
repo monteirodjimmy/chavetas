@@ -11,22 +11,25 @@
     
 }
 .boxmodel {
-   border-right: 5px solid red ;
+   border: 3px solid lightblue;
     padding-top: 70px;
     padding-bottom: 80px;
     padding-left: 50px;
-    padding-right: 300px;
+    padding-right: 100px;
     margin: 20px;
 }
 
 #dadosdiametro {
-    border: 5px solid red ;
+    border-bottom: 5px solid rgba(184, 152, 104, 0.4);
+    border-right: 5px solid rgba(184, 152, 104, 0.4);
     float: right;
-    margin-left: 100px;
+    box-shadow: 10px 10px lightblue;
+ 
 }
 
 h1{
-    border-bottom: 5px solid azure;
+    border-bottom: 5px solid rgba(184, 152, 104, 0.4);
+    box-shadow: 10px 10px lightblue;
     color: brown;
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -50,6 +53,18 @@ h1{
     
 }
 
+#dimentions {
+    width: 610px;
+    transition: all 3s;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
 option {
     width: auto;
+}
+
+.tolerancia {
+    width: 50px;
 }

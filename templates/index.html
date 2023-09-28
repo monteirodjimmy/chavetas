@@ -10,9 +10,10 @@
     <h1>CHAVETAS</h1>
     <div class="conteiner">
         <div  class="boxmodel">
-            <img src="/static/engenagem.png" id="engrenagem" class="engrenagem">
-               <div id="dadosdiametro">
-                Diâmetro do eixo <br>
+            <img src="/static/engrenagem.png" id="engrenagem" class="engrenagem">
+              
+            <div id="dadosdiametro" class="boxmodelmenor">
+                Escolha a faixa do Diâmetro do Eixo:<br>
                 Acima de - até:
                     <form method="get">
                     <select id="diametros">
@@ -30,12 +31,17 @@
                         <option value="65-75">65-75</option>
                     </select>
                     </form>
-                </div>
+            </div>
         </div>
         <div id="resultados" class="boxmodel"> 
-        <h2> Dados da sua chaveta:</h2> <br>
-            Largua (b):
+            <img src="/static/chaveta_dimetions.PNG" id="dimentions">
+            <h2> Dados da sua chaveta:</h2> <br>
+            Largua da chaveta (b): <input type="text">
+            Tolerância <input type="text" class="tolerancia" > <input type="text"class="tolerancia"> <br>
+            Altura da chaveta(h): <input type="text">
+            Tolerância <input type="text"class="tolerancia"> <input type="text"class="tolerancia">
 
+            
         </div>
     </div>
 </body>
