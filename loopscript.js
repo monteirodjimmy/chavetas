@@ -11,14 +11,7 @@ var todos = [
 
 intervaloDiametro = "10-12"
 
-for (var i=0; i < norma.length; i++) {
-    if (norma[i][0] === intervaloDiametro ){
-        console.log(norma[i][1],norma[i][2],norma[i][3],norma[i][4])
-    } else {
-        console.log("Esse intervalo de diâmetro não é válido")
-    }
 
-}
 
 todos.forEach(
     function(todos,i) { // serve para aplicar uma função na lsita
