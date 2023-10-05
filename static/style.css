@@ -65,8 +65,6 @@ option {
     width: auto;
 }
 
-
-
 li {
     list-style: none;
     color: brown;
@@ -83,8 +81,8 @@ button {
     color: brown;
     position: relative;
     top: -1.2rem;
-    left: 160px;
-    width: 40px;
+    left: 250px;
+    width: 80px;
     background-color:lightblue;
     /*border: 1px solid seagreen;*/
     text-align: center;
