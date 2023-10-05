@@ -21,7 +21,7 @@ for (var i=0; i < norma.length; i++) {
 }
 
 todos.forEach(
-    function(todos,i) {
-        console.log(todos,i)
+    function(todos,i) { // serve para aplicar uma função na lsita
+        console.log(todos,i)// a função não precisa estar dentro 
     }
 )

@@ -68,3 +68,16 @@ option {
 .tolerancia {
     width: 50px;
 }
+
+li {
+    list-style: none;
+    color: brown;
+    font-size: 2em;
+}
+
+button {
+    position: relative;
+    top: -21px;
+    left: 30%;
+    right: 10px;
+}
