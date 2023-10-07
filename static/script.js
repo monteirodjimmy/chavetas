@@ -15,6 +15,8 @@ var norma = [["6-8",2,2,2,"+0,025",0,"+0,060","+0,020","-0,004",-0.029,"+0,012",
 ["22-30",8,7,8,"+0,036",0,"+0,098","+0,010",0,-0.036,0,0,,0,0,0,4.0,"+0,2",0,3.3,"+0,2",0,0.25,0.16]
 ];
 
+//const filterArray = array.filter((num)=> num === intdiametro.value)
+
 function calcularChaveta(){
     for (var i=0; i < norma.length; i++) {
         if (norma[i][0] === intdiametro.value){
