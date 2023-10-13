@@ -83,3 +83,50 @@ console.log(double)
 const filterArray = array.filter((num)=> num > 2)
 
 console.log('filter',filterArray)
+// reference type
+var object1 = {value: 10};
+var object2 = object1;
+var object3 = {value: 10 };
+
+// context vs scope
+
+const object4 = {
+    a: function(){
+        console.log(this)
+    }
+}
+
+class Payler1 {
+    constructor(name,type) {
+        this.name = name;
+        this.name = type;
+    }
+}
+
+//instaciation em JS 
+// tem aver com class, constructor, super e this
+
+// pass by reference
+
+var a = 5;
+var b = a; // aqui eu copiei o valor
+b++
+
+// pas by reference 
+
+let obj1 = {name: 'Yaouu', password: '98718961'}
+let obj2 = obj1; // já aqui eu indiquei onde é o endereço da memória
+
+obj2.password = "easy pra carai";
+
+console.log(a)
+console.log(b)
+console.log(obj1)
+console.log(obj2)
+
+var c = [1,3,5,2,8]
+var d = c; // também dá merda pq é um obejeto e passa por referencia
+var f = [].concat(c)//aqui eu criei uma cópia 
+d.push(45)
+// c também será alterado
+console.log(c)
