@@ -30,8 +30,8 @@
 h1{
     border-bottom: 5px solid rgba(184, 152, 104, 0.4);
     box-shadow: 10px 10px lightblue;
-    color: brown;
-    text-align: center;
+    color: rgb(199, 200, 212);
+    text-align: left;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 #diametros {
