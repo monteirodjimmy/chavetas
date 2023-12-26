@@ -6,16 +6,20 @@
     <title>CHAVETAS</title>
     <link rel="stylesheet" href="./static/style.css">
 </head>
-<body id="chavetas">
-    <h1>CHAVETAS</h1>
+<body>
+  <header class="header">
+    <a class="logo" href="#">CHAVETAS</a>
+
+    <nav class="main-nav ">
+        <a href="#">Chavetas</a>
+        <a href="#">Anel Elástico[Anel de Retenção]</a>
+        <a href="#">Sobre</a>
+    </nav>
+  </header>
     <div class="conteiner">
-        <div  class="boxmodel">
-            <img src="./static/engrenagem.png" id="engrenagem" class="engrenagem">
-              
-        </div>
         <div id="resultados" class="boxmodel"> 
-            <img src="./static/chaveta_dimetions.PNG" id="dimentions">
-            <div id="dadosdiametro" class="boxmodelmenor">
+            <div class="box"><img src="./static/chaveta_dimetions.PNG"></div>
+            <div>
                 Escolha a faixa do Diâmetro do Eixo:<br>
                 Acima de - até:
                     <form method="get">
@@ -36,7 +40,7 @@
                     </form>
                     <button id="calcular">Calcular</button>
             </div>
-            <h2> Medidas da sua chaveta:</h2> <br>
+            <h2> Dados da sua chaveta:</h2> <br>
             Largua da chaveta (b): <div id="largura" class="boxresultados"></div>
             Altura da chaveta (h): <div id="altura" class="boxresultados"></div>
             Tolerância rasgo do Eixo (FOLGA): <div id="toleranciaeixofls" class="boxresultados"></div>
@@ -45,8 +49,14 @@
             Tolerância rasgo do Cubo (FOLGA):
             <div id="toleranciacuboils" class="boxresultados"></div>
             <div id="toleranciacuboili" class="boxresultados"></div>
-            
         </div>
     </div>
+    <div class="zone  grid-wrapper">
+        <div class="box zone"><img class="turn-around" src="./static/engrenagem.png" alt=""></div>
+        <div class="box zone"><p>Chavetas são elementos mecanicos que ajudam a transmitir torque entre 
+            elementos rotativos
+        </p></div>
+    </div>
+    <footer>Made by -> Mateus M. Rodigues [Eng. Mecânico]</footer>
     <script type="text/javascript" src="./static/script.js"></script>
 </body>
