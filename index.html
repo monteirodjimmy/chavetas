@@ -8,52 +8,58 @@
 </head>
 <body>
   <header class="header">
-    <a class="logo" href="#">CHAVETAS</a>
+    <a class="logo" href="index.html">CHAVETAS</a>
 
     <nav class="main-nav ">
-        <a href="#">Chavetas</a>
-        <a href="#">Anel Elástico[Anel de Retenção]</a>
-        <a href="#">Sobre</a>
+        <a href="index.html">Chavetas / </a>
+        <a href="anel.html">Anel Elástico [Anel de Retenção] /</a>
+        <a href="about.html">Sobre</a>
     </nav>
   </header>
     <div class="conteiner">
-        <div id="resultados" class="boxmodel"> 
-            <div class="box"><img src="./static/chaveta_dimetions.PNG"></div>
-            <div>
-                Escolha a faixa do Diâmetro do Eixo:<br>
-                Acima de - até:
+            <div class="big-box" ><img src="./static/chaveta_dimetions.PNG"></div>
+            <div id="dadosdiametro" class="faixa-de-entrada">
+                <div class="">
+                    Escolha a faixa do Diâmetro do Eixo:<br>
+                    Acima de - até:
                     <form method="get">
-                    <select id="diametros">
-                        <option value="6-8">6-8</option>
-                        <option value="8-10">8-10</option>
-                        <option value="10-12">10-12</option>
-                        <option value="12-17">12-17</option>
-                        <option value="17-22">17-22</option>
-                        <option value="22-30">22-30</option>
-                        <option value="30-38">30-38</option>
-                        <option value="38-44">38-44</option>
-                        <option value="44-50">44-50</option>
-                        <option value="50-58">50-58</option>
-                        <option value="58-65">58-65</option>
-                        <option value="65-75">65-75</option>
-                    </select>
-                    </form>
-                    <button id="calcular">Calcular</button>
+                        <select class="selectors" id="diametros">
+                            <option value="6-8">6-8</option>
+                            <option value="8-10">8-10</option>
+                            <option value="10-12">10-12</option>
+                            <option value="12-17">12-17</option>
+                            <option value="17-22">17-22</option>
+                            <option value="22-30">22-30</option>
+                            <option value="30-38">30-38</option>
+                            <option value="38-44">38-44</option>
+                            <option value="44-50">44-50</option>
+                            <option value="50-58">50-58</option>
+                            <option value="58-65">58-65</option>
+                            <option value="65-75">65-75</option>
+                        </select>
+                        </form>
+                </div>
+                <button id="calcular">Calcular</button>
+                    
             </div>
-            <h2> Dados da sua chaveta:</h2> <br>
-            Largua da chaveta (b): <div id="largura" class="boxresultados"></div>
-            Altura da chaveta (h): <div id="altura" class="boxresultados"></div>
-            Tolerância rasgo do Eixo (FOLGA): <div id="toleranciaeixofls" class="boxresultados"></div>
-            <div id="toleranciaeixofls" class="boxresultados"></div>
-            <div id="toleranciaeixofli" class="boxresultados"></div>
-            Tolerância rasgo do Cubo (FOLGA):
-            <div id="toleranciacuboils" class="boxresultados"></div>
-            <div id="toleranciacuboili" class="boxresultados"></div>
-        </div>
-    </div>
-    <div class="zone  grid-wrapper">
-        <div class="box zone"><img class="turn-around" src="./static/engrenagem.png" alt=""></div>
-        <div class="box zone"><p>Chavetas são elementos mecanicos que ajudam a transmitir torque entre 
+            <div class="faixa-de-saida">
+                <h2> Dados da sua chaveta:</h2> <br>
+                <div class="sublinhar "> <p>b -   Largua da chaveta: </p> <div id="largura" class="boxresultados">0</div></div>
+               <div class="sublinhar"><p>h -   Altura da chaveta:</p> <div id="altura" class="boxresultados">0</div></div> 
+                
+                Tolerância rasgo do Eixo (FOLGA): 
+                <div id="toleranciaeixofls" class="boxresultados">0</div>
+                <div id="toleranciaeixofli" class="boxresultados">0</div>
+                Tolerância rasgo do Cubo (FOLGA):
+                <div id="toleranciacuboils" class="boxresultados">0</div>
+                <div id="toleranciacuboili" class="boxresultados">0</div> 
+            </div>
+
+            </div>
+
+    <div class="grid-wrapper">
+        <div class="box "><img class="turn-around" src="./static/engrenagem.png" alt=""></div>
+        <div class="box "><p>Chavetas são elementos mecanicos que ajudam a transmitir torque entre 
             elementos rotativos
         </p></div>
     </div>
