@@ -36,27 +36,61 @@
                             <option value="50-58">50-58</option>
                             <option value="58-65">58-65</option>
                             <option value="65-75">65-75</option>
+                            <option value="75-85">75-85</option>
+                            <option value="85-95">85-95</option>
+                            <option value="95-110">95-110</option>
+                            <option value="110-130">110-130</option>
+                            <option value="130-150">130-150</option>
+                            <option value="150-170">150-170</option>
+                            <option value="170-200">170-200</option>
+                            <option value="200-230">200-230</option>
+                            <option value="230-260">230-260</option>
+                            <option value="260-290">260-290</option>
+                            <option value="290-330">290-330</option>
+                            <option value="330-380">330-380</option>
+                            <option value="380-440">380-440</option>
+                            <option value="440-500">440-500</option>
+
                         </select>
                         </form>
                 </div>
                 <button id="calcular">Calcular</button>
                     
             </div>
-            <div class="faixa-de-saida">
-                <h2> Dados da sua chaveta:</h2> <br>
-                <div class="sublinhar"> <p>b -   Largua da chaveta: </p> <div id="largura" class="boxresultados">0</div></div>
-               <div class="sublinhar"><p>h -   Altura da chaveta:</p> <div id="altura" class="boxresultados">0</div></div> 
+            <div class="faixa-de-saida grid-wrapper">
+                <div>
+                    <div class="sublinhar"> <p>b -   Largua da chaveta: </p> <div id="largura" class="boxresultados">0</div></div>
+                    <div class="sublinhar"><p>h -   Altura da chaveta:</p> <div id="altura" class="boxresultados">0</div></div> 
+                    <div class="sublinhar-tolerancia ajust-padding-top"> 
+                         b +/- Tolerância rasgo do Eixo (<span id="tipo-tolerancia">FOLGA</span>): 
+                         <div id="toleranciaeixofls" class="boxresultados">0</div>
+                         <div id="toleranciaeixofli" class="boxresultados">0</div>
+                    </div> 
+                    <div class="sublinhar-tolerancia ajust-padding-top">
+                         b +/- Tolerância rasgo do Cubo (<span id="tipo-tolerancia">FOLGA</span>):
+                         <div id="toleranciacuboils" class="boxresultados">0</div>
+                         <div id="toleranciacuboili" class="boxresultados">0</div> 
+     
+                    </div>
+
+                </div>
+
+               <div>
+                <div class="sublinhar"> <p>t1 -   Profundide no Eixo </p> <div id="t1" class="boxresultados">0</div></div>
+               <div class="sublinhar"><p>t2 -   Profundide no Cubo:</p> <div id="t2" class="boxresultados">0</div></div> 
                <div class="sublinhar-tolerancia ajust-padding-top"> 
-                    Tolerância rasgo do Eixo (FOLGA): 
-                    <div id="toleranciaeixofls" class="boxresultados">0</div>
-                    <div id="toleranciaeixofli" class="boxresultados">0</div>
+                    t1 +/- Tolerância da Profundide no Eixo : 
+                    <div id="tolerancia-profundidade-eixofls" class="boxresultados">0</div>
+                    <div id="tolerancia-profundidade-eixofli" class="boxresultados">0</div>
                </div> 
                <div class="sublinhar-tolerancia ajust-padding-top">
-                    Tolerância rasgo do Cubo (FOLGA):
-                    <div id="toleranciacuboils" class="boxresultados">0</div>
-                    <div id="toleranciacuboili" class="boxresultados">0</div> 
+                    t2 +/- Tolerância da Profundide no Cubo:
+                    <div id="tolerancia-profundidade-cuboils" class="boxresultados">0</div>
+                    <div id="tolerancia-profundidade-cuboili" class="boxresultados">0</div> 
                </div>
-                
+
+               </div>
+            
             </div>
 
             </div>
