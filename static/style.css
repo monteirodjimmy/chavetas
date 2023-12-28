@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 20pxs;
     color: #e3fffb;
 }
 body {
@@ -97,14 +98,15 @@ body {
 }
 
 .faixa-de-saida{
-    padding: 1vh 3vw 1vh;
+    padding: 5vh 3vw 5vh;
     width: 100%;
     height: auto;
+  
     /*background: rgba(162, 35, 149, 0.19);*/
 }
 .grid-wrapper {
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 50px;
     grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
 }
 .big-box > img{
@@ -119,9 +121,9 @@ body {
     text-align: center;
 }
 .box{
-    padding: 100px;
+    padding: 2vw;
     display:inline-block;
-    text-align: center;
+    text-align: left;
 }
 
 
@@ -134,12 +136,19 @@ body {
     
 }
 .sublinhar > p{
-    border-bottom: 5px solid rgba(184, 152, 104, 0.4) ;
+    border-bottom: 2px solid #ceb8a1;;
     
    
 }
-.ajust-padding{
+.sublinhar-tolerancia{
+    border-bottom: 2px solid #ceb8a1; ;
+
+}
+.ajust-padding-bottom{
     padding-bottom: 1vh;
+}
+.ajust-padding-top{
+    padding-top: 1vh;
 }
 
 button {
@@ -174,7 +183,7 @@ button:hover{
     content: '0';
     position: relative;
     top: -1.2rem;
-    left: 250px;
+    left: 350px;
     width: 80px;
     /*border: 1px solid seagreen;*/
     text-align: center;
