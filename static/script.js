@@ -1,12 +1,15 @@
 //botoes
 var button = document.getElementById("calcular");
 var tolerancia_form = document.getElementById("tolerancia-form")
+
 //saidas
 var intdiametro = document.getElementById("diametros");
 var tolerancia = document.getElementById("tolerancia")
 var largura = document.getElementById("largura");
 var altura = document.getElementById("altura");
-var tipo_tolerancia = document.getElementById("tipo-tolerancia")
+//var tipo_tolerancia = document.getElementById("tipo-tolerancia")
+var tipo_tolerancia = document.getElementsByClassName("tipo-tolerancia")
+console.log(tipo_tolerancia[1].innerHTML)
 var toleranciaeixofls = document.getElementById("toleranciaeixofls")
 var toleranciaeixofli = document.getElementById("toleranciaeixofli")
 var toleranciacuboils = document.getElementById("toleranciacuboils")
@@ -59,7 +62,8 @@ function calcularChaveta(){
     }
 }
 tolerancia_form.addEventListener("click", function(){
-        tipo_tolerancia.innerHTML = tolerancia.value
+        tipo_tolerancia[0].innerHTML = tolerancia.value
+        tipo_tolerancia[1].innerHTML = tolerancia.value
 })
 
 button.addEventListener("click",function(){
@@ -71,18 +75,24 @@ button.addEventListener("click",function(){
         toleranciaeixofli.innerHTML = calcularChaveta()[11]
         toleranciacuboils.innerHTML = calcularChaveta()[13]
         toleranciacuboili.innerHTML = calcularChaveta()[14]
+        document.getElementsByClassName("nome-tolerancia")[0].innerHTML = calcularChaveta()[12]
+        document.getElementsByClassName("nome-tolerancia")[1].innerHTML = calcularChaveta()[15]
     }
     else if(tolerancia.value==="FOLGA"){
         toleranciaeixofls.innerHTML = calcularChaveta()[4]
         toleranciaeixofli.innerHTML = calcularChaveta()[5]
         toleranciacuboils.innerHTML = calcularChaveta()[7]
         toleranciacuboili.innerHTML = calcularChaveta()[8]
+        document.getElementsByClassName("nome-tolerancia")[0].innerHTML = calcularChaveta()[6]
+        document.getElementsByClassName("nome-tolerancia")[1].innerHTML = calcularChaveta()[9]
     }
     else{
         toleranciaeixofls.innerHTML = calcularChaveta()[16]
         toleranciaeixofli.innerHTML = calcularChaveta()[17]
         toleranciacuboils.innerHTML = calcularChaveta()[16]
         toleranciacuboili.innerHTML = calcularChaveta()[17]
+        document.getElementsByClassName("nome-tolerancia")[0].innerHTML = calcularChaveta()[18]
+        document.getElementsByClassName("nome-tolerancia")[1].innerHTML = calcularChaveta()[18]
     }
     
     t1.innerHTML = calcularChaveta()[19]
@@ -93,4 +103,11 @@ button.addEventListener("click",function(){
     t2_toleranciacuboili.innerHTML = calcularChaveta()[21]
 
 
-     console.log(intdiametro.value)})
+     console.log(intdiametro.value)
+    })
+
+    /*var valores = document.getElementsByClassName('valor');
+
+for (var i=0; valores[i]; i++) {
+    valores[i].innerHTML += '%';
+  }*/
