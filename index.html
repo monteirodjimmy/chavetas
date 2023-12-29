@@ -6,47 +6,116 @@
     <title>CHAVETAS</title>
     <link rel="stylesheet" href="./static/style.css">
 </head>
-<body id="chavetas">
-    <h1>CHAVETAS</h1>
+<body>
+  <header class="header">
+    <a class="logo" href="index.html">CHAVETAS</a>
+
+    <nav class="main-nav ">
+        <a href="index.html">Chavetas / </a>
+        <a href="anel.html">Anel Elástico [Anel de Retenção] /</a>
+        <a href="about.html">Sobre</a>
+    </nav>
+  </header>
     <div class="conteiner">
-        <div  class="boxmodel">
-            <img src="./static/engrenagem.png" id="engrenagem" class="engrenagem">
-              
-        </div>
-        <div id="resultados" class="boxmodel"> 
-            <img src="./static/chaveta_dimetions.PNG" id="dimentions">
-            <div id="dadosdiametro" class="boxmodelmenor">
-                Escolha a faixa do Diâmetro do Eixo:<br>
-                Acima de - até:
+            <div class="big-box" ><img src="./static/chaveta_dimetions.PNG"></div>
+            <div id="dadosdiametro" class="faixa-de-entrada">
+                <div class="">
+                    Escolha a faixa do Diâmetro do Eixo:<br>
+                    Acima de - até:
                     <form method="get">
-                    <select id="diametros">
-                        <option value="6-8">6-8</option>
-                        <option value="8-10">8-10</option>
-                        <option value="10-12">10-12</option>
-                        <option value="12-17">12-17</option>
-                        <option value="17-22">17-22</option>
-                        <option value="22-30">22-30</option>
-                        <option value="30-38">30-38</option>
-                        <option value="38-44">38-44</option>
-                        <option value="44-50">44-50</option>
-                        <option value="50-58">50-58</option>
-                        <option value="58-65">58-65</option>
-                        <option value="65-75">65-75</option>
-                    </select>
-                    </form>
-                    <button id="calcular">Calcular</button>
+                        <select class="selectors" id="diametros">
+                            <option value="6-8">6-8</option>
+                            <option value="8-10">8-10</option>
+                            <option value="10-12">10-12</option>
+                            <option value="12-17">12-17</option>
+                            <option value="17-22">17-22</option>
+                            <option value="22-30">22-30</option>
+                            <option value="30-38">30-38</option>
+                            <option value="38-44">38-44</option>
+                            <option value="44-50">44-50</option>
+                            <option value="50-58">50-58</option>
+                            <option value="58-65">58-65</option>
+                            <option value="65-75">65-75</option>
+                            <option value="75-85">75-85</option>
+                            <option value="85-95">85-95</option>
+                            <option value="95-110">95-110</option>
+                            <option value="110-130">110-130</option>
+                            <option value="130-150">130-150</option>
+                            <option value="150-170">150-170</option>
+                            <option value="170-200">170-200</option>
+                            <option value="200-230">200-230</option>
+                            <option value="230-260">230-260</option>
+                            <option value="260-290">260-290</option>
+                            <option value="290-330">290-330</option>
+                            <option value="330-380">330-380</option>
+                            <option value="380-440">380-440</option>
+                            <option value="440-500">440-500</option>
+
+                        </select>
+                        </form>
+                </div>
+                <div class="">
+                    Selecione o tipo de Tolerância:
+                
+                    <form id="tolerancia-form" method="get">
+                        <select class="selectors" id="tolerancia">
+                            <option value="NORMAL">NORMAL</option>
+                            <option value="FOLGA">FOLGA</option>
+                            <option value="INTERFERÊNCIA">INTERFERÊNCIA</option>
+                            
+                           
+                        </select>
+                        </form>
+                </div>
+                <button id="calcular">Calcular</button>
+                    
             </div>
-            <h2> Medidas da sua chaveta:</h2> <br>
-            Largua da chaveta (b): <div id="largura" class="boxresultados"></div>
-            Altura da chaveta (h): <div id="altura" class="boxresultados"></div>
-            Tolerância rasgo do Eixo (FOLGA): <div id="toleranciaeixofls" class="boxresultados"></div>
-            <div id="toleranciaeixofls" class="boxresultados"></div>
-            <div id="toleranciaeixofli" class="boxresultados"></div>
-            Tolerância rasgo do Cubo (FOLGA):
-            <div id="toleranciacuboils" class="boxresultados"></div>
-            <div id="toleranciacuboili" class="boxresultados"></div>
+            <div class="faixa-de-saida grid-wrapper">
+                <div>
+                    <div class="sublinhar"> <p>b -   Largua da chaveta: </p> <div id="largura" class="boxresultados">0</div></div>
+                    <div class="sublinhar"><p>h -   Altura da chaveta:</p> <div id="altura" class="boxresultados">0</div></div> 
+                    <div class="sublinhar-tolerancia ajust-padding-top"> 
+                         b +/- Tolerância rasgo do Eixo (<span id="tipo-tolerancia">NORMAL</span>): 
+                         <div id="toleranciaeixofls" class="boxresultados">0</div>
+                         <div id="toleranciaeixofli" class="boxresultados">0</div>
+                    </div> 
+                    <div class="sublinhar-tolerancia ajust-padding-top">
+                         b +/- Tolerância rasgo do Cubo (<span id="tipo-tolerancia">NORMAL</span>):
+                         <div id="toleranciacuboils" class="boxresultados">0</div>
+                         <div id="toleranciacuboili" class="boxresultados">0</div> 
+     
+                    </div>
+
+                </div>
+
+               <div>
+                <div class="sublinhar"> <p>t1 -   Profundide no Eixo </p> <div id="t1" class="boxresultados">0</div></div>
+               <div class="sublinhar"><p>t2 -   Profundide no Cubo:</p> <div id="t2" class="boxresultados">0</div></div> 
+               <div class="sublinhar-tolerancia ajust-padding-top"> 
+                    t1 +/- Tolerância da Profundide no Eixo : 
+                    <div id="tolerancia-profundidade-eixofls" class="boxresultados">0</div>
+                    <div id="tolerancia-profundidade-eixofli" class="boxresultados">0</div>
+               </div> 
+               <div class="sublinhar-tolerancia ajust-padding-top">
+                    t2 +/- Tolerância da Profundide no Cubo:
+                    <div id="tolerancia-profundidade-cuboils" class="boxresultados">0</div>
+                    <div id="tolerancia-profundidade-cuboili" class="boxresultados">0</div> 
+               </div>
+
+               </div>
             
-        </div>
+            </div>
+
+            </div>
+
+    <div class="grid-wrapper">
+        <div class="box zone"><img class="turn-around" src="./static/engrenagem.png" alt=""></div>
+        <div class="box zone"><p>Chavetas são elementos mecanicos que ajudam a transmitir torque entre 
+            elementos rotativos. Existem várias formas de se aplicar uma chaveta em um conjunto cubo/eixo 
+            (retangular, Cabeça quilha e Woodruff [meia-lua]). As medidas acima advem da
+            norma DIN 6885-1
+        </p></div>
     </div>
+    <footer>Made by -> Mateus M. Rodigues [Eng. Mecânico]</footer>
     <script type="text/javascript" src="./static/script.js"></script>
 </body>
