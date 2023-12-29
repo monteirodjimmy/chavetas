@@ -1,7 +1,12 @@
+//botoes
 var button = document.getElementById("calcular");
+var tolerancia_form = document.getElementById("tolerancia-form")
+//saidas
 var intdiametro = document.getElementById("diametros");
+var tolerancia = document.getElementById("tolerancia")
 var largura = document.getElementById("largura");
-var altura = document.getElementById("altura")
+var altura = document.getElementById("altura");
+var tipo_tolerancia = document.getElementById("tipo-tolerancia")
 var toleranciaeixofls = document.getElementById("toleranciaeixofls")
 var toleranciaeixofli = document.getElementById("toleranciaeixofli")
 var toleranciacuboils = document.getElementById("toleranciacuboils")
@@ -53,14 +58,33 @@ function calcularChaveta(){
         } 
     }
 }
+tolerancia_form.addEventListener("click", function(){
+        tipo_tolerancia.innerHTML = tolerancia.value
+})
 
 button.addEventListener("click",function(){
     largura.innerHTML = calcularChaveta()[1]
     altura.innerHTML = calcularChaveta()[2]
-    toleranciaeixofls.innerHTML = calcularChaveta()[4]
-    toleranciaeixofli.innerHTML = calcularChaveta()[5]
-    toleranciacuboils.innerHTML = calcularChaveta()[7]
-    toleranciacuboili.innerHTML = calcularChaveta()[8]
+    if (tolerancia.value==="NORMAL"){
+
+        toleranciaeixofls.innerHTML = calcularChaveta()[10]
+        toleranciaeixofli.innerHTML = calcularChaveta()[11]
+        toleranciacuboils.innerHTML = calcularChaveta()[13]
+        toleranciacuboili.innerHTML = calcularChaveta()[14]
+    }
+    else if(tolerancia.value==="FOLGA"){
+        toleranciaeixofls.innerHTML = calcularChaveta()[4]
+        toleranciaeixofli.innerHTML = calcularChaveta()[5]
+        toleranciacuboils.innerHTML = calcularChaveta()[7]
+        toleranciacuboili.innerHTML = calcularChaveta()[8]
+    }
+    else{
+        toleranciaeixofls.innerHTML = calcularChaveta()[16]
+        toleranciaeixofli.innerHTML = calcularChaveta()[17]
+        toleranciacuboils.innerHTML = calcularChaveta()[16]
+        toleranciacuboili.innerHTML = calcularChaveta()[17]
+    }
+    
     t1.innerHTML = calcularChaveta()[19]
     t2.innerHTML = calcularChaveta()[22]
     t1_toleranciaeixofls.innerHTML = calcularChaveta()[20]
