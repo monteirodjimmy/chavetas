@@ -54,6 +54,19 @@
                         </select>
                         </form>
                 </div>
+                <div class="">
+                    Selecione o tipo de Tolerância:
+                
+                    <form id="tolerancia-form" method="get">
+                        <select class="selectors" id="tolerancia">
+                            <option value="NORMAL">NORMAL</option>
+                            <option value="FOLGA">FOLGA</option>
+                            <option value="INTERFERÊNCIA">INTERFERÊNCIA</option>
+                            
+                           
+                        </select>
+                        </form>
+                </div>
                 <button id="calcular">Calcular</button>
                     
             </div>
@@ -62,12 +75,12 @@
                     <div class="sublinhar"> <p>b -   Largua da chaveta: </p> <div id="largura" class="boxresultados">0</div></div>
                     <div class="sublinhar"><p>h -   Altura da chaveta:</p> <div id="altura" class="boxresultados">0</div></div> 
                     <div class="sublinhar-tolerancia ajust-padding-top"> 
-                         b +/- Tolerância rasgo do Eixo (<span id="tipo-tolerancia">FOLGA</span>): 
+                         b +/- Tolerância rasgo do Eixo (<span id="tipo-tolerancia">NORMAL</span>): 
                          <div id="toleranciaeixofls" class="boxresultados">0</div>
                          <div id="toleranciaeixofli" class="boxresultados">0</div>
                     </div> 
                     <div class="sublinhar-tolerancia ajust-padding-top">
-                         b +/- Tolerância rasgo do Cubo (<span id="tipo-tolerancia">FOLGA</span>):
+                         b +/- Tolerância rasgo do Cubo (<span id="tipo-tolerancia">NORMAL</span>):
                          <div id="toleranciacuboils" class="boxresultados">0</div>
                          <div id="toleranciacuboili" class="boxresultados">0</div> 
      
