@@ -109,8 +109,9 @@ body {
     
 }
 .big-box{
-    display:inline-block;
+    display:flex;
     text-align: center;
+    justify-content: center; /*esse realmente centralizou a imagem*/
    
 }
 .box{
