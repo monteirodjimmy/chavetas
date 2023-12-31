@@ -138,12 +138,6 @@ body {
     border-bottom: 2px solid #ceb8a1; ;
 
 }
-.ajust-padding-bottom{
-    padding-bottom: 1vh;
-}
-.ajust-padding-top{
-    padding-top: 1vh;
-}
 
 button {
     position: relative;
@@ -165,13 +159,16 @@ button:hover{
     font-weight: 500;
     padding: 1vh 3vw 1vh;
     margin: 1vh;
-    border: 2px solid #ceb8a1;
+    border: 3px solid #ceb8a1;
     font-size: 20px;
+    
 }
 .selectors > option {
     background: rgb(161, 165, 165);
     color: #efe5db;
     font-size: auto;
+    text-align: center;
+    
 }
 .boxresultados {
     content: '0';
@@ -195,6 +192,21 @@ footer {
     width: 50px;
     height: 25px;
     background-color: black;
+}
+
+.ajust-padding-bottom{
+    padding-bottom: 1vh;
+}
+.ajust-padding-top{
+    padding-top: 1vh;
+}
+.ajust-padding-left-right{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.invisible-text{
+    color: rgba(161, 165, 165, 0.303);
 }
 /*
 

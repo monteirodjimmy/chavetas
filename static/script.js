@@ -1,5 +1,5 @@
 //botoes
-var button = document.getElementById("calcular");
+var diameter_form = document.getElementById("diameter-form");
 var tolerancia_form = document.getElementById("tolerancia-form")
 
 //saidas
@@ -52,7 +52,7 @@ var norma = [
 
 //const filterArray = array.filter((num)=> num === intdiametro.value)
 
-function calcularChaveta(){
+function bucarDados(){
     for (var i=0; i < norma.length; i++) {
         if (norma[i][0] === intdiametro.value){
             //console.log(norma[i])
@@ -61,53 +61,57 @@ function calcularChaveta(){
         } 
     }
 }
-tolerancia_form.addEventListener("click", function(){
-        tipo_tolerancia[0].innerHTML = tolerancia.value
-        tipo_tolerancia[1].innerHTML = tolerancia.value
-})
 
-button.addEventListener("click",function(){
-    largura.innerHTML = calcularChaveta()[1]
-    altura.innerHTML = calcularChaveta()[2]
+function exibirDados (){
+    
+    largura.innerHTML = bucarDados()[1]
+    altura.innerHTML = bucarDados()[2]
     if (tolerancia.value==="NORMAL"){
 
-        toleranciaeixofls.innerHTML = calcularChaveta()[10]
-        toleranciaeixofli.innerHTML = calcularChaveta()[11]
-        toleranciacuboils.innerHTML = calcularChaveta()[13]
-        toleranciacuboili.innerHTML = calcularChaveta()[14]
-        document.getElementsByClassName("nome-tolerancia")[0].innerHTML = calcularChaveta()[12]
-        document.getElementsByClassName("nome-tolerancia")[1].innerHTML = calcularChaveta()[15]
+        toleranciaeixofls.innerHTML = bucarDados()[10]
+        toleranciaeixofli.innerHTML = bucarDados()[11]
+        toleranciacuboils.innerHTML = bucarDados()[13]
+        toleranciacuboili.innerHTML = bucarDados()[14]
+        document.getElementsByClassName("nome-tolerancia")[0].innerHTML = bucarDados()[12]
+        document.getElementsByClassName("nome-tolerancia")[1].innerHTML = bucarDados()[15]
     }
     else if(tolerancia.value==="FOLGA"){
-        toleranciaeixofls.innerHTML = calcularChaveta()[4]
-        toleranciaeixofli.innerHTML = calcularChaveta()[5]
-        toleranciacuboils.innerHTML = calcularChaveta()[7]
-        toleranciacuboili.innerHTML = calcularChaveta()[8]
-        document.getElementsByClassName("nome-tolerancia")[0].innerHTML = calcularChaveta()[6]
-        document.getElementsByClassName("nome-tolerancia")[1].innerHTML = calcularChaveta()[9]
+        toleranciaeixofls.innerHTML = bucarDados()[4]
+        toleranciaeixofli.innerHTML = bucarDados()[5]
+        toleranciacuboils.innerHTML = bucarDados()[7]
+        toleranciacuboili.innerHTML = bucarDados()[8]
+        document.getElementsByClassName("nome-tolerancia")[0].innerHTML = bucarDados()[6]
+        document.getElementsByClassName("nome-tolerancia")[1].innerHTML = bucarDados()[9]
     }
     else{
-        toleranciaeixofls.innerHTML = calcularChaveta()[16]
-        toleranciaeixofli.innerHTML = calcularChaveta()[17]
-        toleranciacuboils.innerHTML = calcularChaveta()[16]
-        toleranciacuboili.innerHTML = calcularChaveta()[17]
-        document.getElementsByClassName("nome-tolerancia")[0].innerHTML = calcularChaveta()[18]
-        document.getElementsByClassName("nome-tolerancia")[1].innerHTML = calcularChaveta()[18]
+        toleranciaeixofls.innerHTML = bucarDados()[16]
+        toleranciaeixofli.innerHTML = bucarDados()[17]
+        toleranciacuboils.innerHTML = bucarDados()[16]
+        toleranciacuboili.innerHTML = bucarDados()[17]
+        document.getElementsByClassName("nome-tolerancia")[0].innerHTML = bucarDados()[18]
+        document.getElementsByClassName("nome-tolerancia")[1].innerHTML = bucarDados()[18]
     }
     
-    t1.innerHTML = calcularChaveta()[19]
-    t2.innerHTML = calcularChaveta()[22]
-    t1_toleranciaeixofls.innerHTML = calcularChaveta()[20]
-    t1_toleranciaeixofli.innerHTML = calcularChaveta()[21]
-    t2_toleranciacuboils.innerHTML = calcularChaveta()[20]
-    t2_toleranciacuboili.innerHTML = calcularChaveta()[21]
+    t1.innerHTML = bucarDados()[19]
+    t2.innerHTML = bucarDados()[22]
+    t1_toleranciaeixofls.innerHTML = bucarDados()[20]
+    t1_toleranciaeixofli.innerHTML = bucarDados()[21]
+    t2_toleranciacuboils.innerHTML = bucarDados()[20]
+    t2_toleranciacuboili.innerHTML = bucarDados()[21]
 
 
      console.log(intdiametro.value)
+
+};
+
+tolerancia_form.addEventListener("click", function(){
+        tipo_tolerancia[0].innerHTML = tolerancia.value
+        tipo_tolerancia[1].innerHTML = tolerancia.value
+        exibirDados()
+})
+
+diameter_form.addEventListener("click",function(){  
+     exibirDados()
     })
 
-    /*var valores = document.getElementsByClassName('valor');
-
-for (var i=0; valores[i]; i++) {
-    valores[i].innerHTML += '%';
-  }*/
+    

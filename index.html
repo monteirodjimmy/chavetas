@@ -20,9 +20,10 @@
             <div class="big-box" ><img src="./static/chavetas_dimentions_04.png"></div>
             <div id="dadosdiametro" class="faixa-de-entrada">
                 <div class="">
-                    Escolha a faixa do Diâmetro do Eixo:<br>
-                    Acima de - até:
-                    <form method="get">
+                    <h3>Escolha a faixa do Diâmetro do Eixo:<br>
+                        Acima de - até:</h3>
+                    
+                    <form id="diameter-form" method="get">
                         <select class="selectors" id="diametros">
                             <option value="6-8">6-8</option>
                             <option value="8-10">8-10</option>
@@ -54,8 +55,12 @@
                         </select>
                         </form>
                 </div>
-                <div class="">
-                    Selecione o tipo de Tolerância:
+
+                <div class="ajust-padding-left-right">
+                   <h3>
+                    Selecione o tipo de Tolerância:<br>
+                    <p class="invisible-text">.</p>
+                   </h3> 
                 
                     <form id="tolerancia-form" method="get">
                         <select class="selectors" id="tolerancia">
@@ -67,7 +72,6 @@
                         </select>
                         </form>
                 </div>
-                <button id="calcular">Calcular</button>
                     
             </div>
             <div class="faixa-de-saida grid-wrapper">
@@ -118,6 +122,6 @@
             norma DIN 6885-1
         </p></div>
     </div>
-    <footer>Made by -> Mateus M. Rodigues [Eng. Mecânico]</footer>
+    <footer>Made by -> Mateus M. Rodrigues [Eng. Mecânico]</footer>
     <script type="text/javascript" src="./static/script.js"></script>
 </body>
