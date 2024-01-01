@@ -107,6 +107,8 @@ function exibirDados (){
 tolerancia_form.addEventListener("click", function(){
         tipo_tolerancia[0].innerHTML = tolerancia.value
         tipo_tolerancia[1].innerHTML = tolerancia.value
+        document.getElementsByClassName("nome-tolerancia")[0].style.border = "2px solid #fff"
+        document.getElementsByClassName("nome-tolerancia")[1].style.border = "2px solid #fff"
         exibirDados()
 })
 

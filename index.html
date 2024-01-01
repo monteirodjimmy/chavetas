@@ -74,27 +74,47 @@
                 </div>
                     
             </div>
-            <div class="faixa-de-saida grid-wrapper">
-                <div class="zone">
-                    <div class="sublinhar"> <p>b -   Largua da chaveta: </p> <div id="largura" class="boxresultados">0</div></div>
-                    <div class="sublinhar"><p>h -   Altura da chaveta:</p> <div id="altura" class="boxresultados">0</div></div> 
-                    <div class="sublinhar-tolerancia ajust-padding-top"> 
-                         b +/- Tolerância rasgo do Eixo (<span class="tipo-tolerancia" >NORMAL</span>): 
-                         <div id="toleranciaeixofls" class="boxresultados">0</div>
-                         <div id="toleranciaeixofli" class="boxresultados">0</div>
-                         <div class="nome-tolerancia"></div>
+            <div class="faixa-de-saida grid-1-1-fractions">
+                <div class="zone-1">
+                    <div>
+                        <div class="container-saida sublinhar">
+                            <div>b -   Largua da chaveta: </div>
+                            <div class="alinhar-v1 " id="largura">0</div>
+                        </div> 
+                    </div>
+
+                    <div >
+                        <div class="container-saida sublinhar">
+                        <div>h -   Altura da chaveta:</div> 
+                        <div id="altura" class="alinhar-v2">0</div>
+                        </div>
+                    </div>
+
+                    <div class="container-saida sublinhar-tolerancia ajust-padding-top"> 
+                        <div> b +/- Tolerância rasgo do Eixo (<span class="tipo-tolerancia" >NORMAL</span>): </div>  
+                        <div class="nome-tolerancia alinhar-t1"></div>
+
+                        <div>
+                            <p id="toleranciaeixofls" class="">0</p>
+                            <p id="toleranciaeixofli" >0</p>
+                        </div>
+                        
+                         
                     </div> 
-                    <div class="sublinhar-tolerancia ajust-padding-top">
+                    <div class=" container-saida sublinhar-tolerancia ajust-padding-top">
                          b +/- Tolerância rasgo do Cubo (<span class="tipo-tolerancia">NORMAL</span>):
-                         <div id="toleranciacuboils" class="boxresultados">0</div>
-                         <div id="toleranciacuboili" class="boxresultados">0</div>
-                         <div class="nome-tolerancia">aaa</div>
+                         <div class="nome-tolerancia alinhar-t2"></div>
+                         <div class="">
+                            <p id="toleranciacuboils" class="">0</p>
+                            <p id="toleranciacuboili" class="">0</p>   
+                         </div>
+                         
      
                     </div>
 
                 </div>
 
-               <div class="zone">
+               <div class="zone-2">
                 <div class="sublinhar"> <p>t1 -   Profundide no Eixo </p> <div id="t1" class="boxresultados">0</div></div>
                <div class="sublinhar"><p>t2 -   Profundide no Cubo:</p> <div id="t2" class="boxresultados">0</div></div> 
                <div class="sublinhar-tolerancia ajust-padding-top"> 
@@ -114,14 +134,18 @@
 
             </div>
 
-    <div class="grid-wrapper">
-        <div class="box zone"><img class="turn-around" src="./static/engrenagem.png" alt=""></div>
-        <div class="box zone"><p>Chavetas são elementos mecanicos que ajudam a transmitir torque entre 
+    <div id="information" class="grid-1-2-fractions">
+        <div class="box "><img class="turn-around" src="./static/engrenagem.png" alt=""></div>
+        <div class="box "><p>Chavetas são elementos mecanicos que ajudam a transmitir torque entre 
             elementos rotativos. Existem várias formas de se aplicar uma chaveta em um conjunto cubo/eixo 
-            (retangular, Cabeça quilha e Woodruff [meia-lua]). As medidas acima advem da
-            norma DIN 6885-1
+            (retangular, Cabeça quilha e Woodruff [meia-lua]). <p>As medidas acima advem da
+                norma DIN 6885-1</p> 
         </p></div>
     </div>
-    <footer>Made by -> Mateus M. Rodrigues [Eng. Mecânico]</footer>
+    <footer class="header">
+        <div>aaaa</div>
+        <div>bbbb</div>
+        Made by -> Mateus M. Rodrigues [Eng. Mecânico]
+    </footer>
     <script type="text/javascript" src="./static/script.js"></script>
 </body>

@@ -19,11 +19,6 @@ body {
     height: 50vh;
 }
 
-.zone {
-  
-    border:5px solid seagreen;
-}
-
 
 .header{
     position: flex;
@@ -49,7 +44,7 @@ body {
     color: #fff;
     font-weight: 500;
     text-decoration: none;
-    margin-left: 5px;
+    margin-left: 10px;
 
 }
 
@@ -77,7 +72,20 @@ body {
 
     width: 100%;
 }
+/*Imagem das medidas --->*/
+.big-box{
+    display:flex;
+    text-align: center;
+    justify-content: center; /*esse realmente centralizou a imagem*/   
+}
 
+.big-box > img{
+    width: 75%;
+}
+
+/*<---- Imagem das medidas*/
+
+/*Faixa de entrada de dados --->*/
 .faixa-de-entrada{
     display: flex;
     align-items: center;
@@ -87,70 +95,6 @@ body {
     width: 100%;
     height: auto;
     background: rgba(161, 165, 165, 0.303);
-}
-
-.faixa-de-saida{
-    padding: 5vh 3vw 5vh;
-    width: 100%;
-    height: auto;
-  
-    /*background: rgba(162, 35, 149, 0.19);*/
-}
-.grid-wrapper {
-    display: grid;
-    grid-gap: 50px;
-    grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
-}
-.big-box > img{
-    width: 75%;
-}
-.box >img{
-    width: 100%;
-    
-}
-.big-box{
-    display:flex;
-    text-align: center;
-    justify-content: center; /*esse realmente centralizou a imagem*/
-   
-}
-.box{
-    padding: 2vw;
-    display:inline-block;
-    text-align: left;
-}
-
-
-.turn-around{
-    width: 350px;
-    transition: all 3s;
-    &:hover {
-      transform: rotate(1080deg);
-    }
-    
-}
-.sublinhar > p{
-    border-bottom: 2px solid #ceb8a1;;
-    
-   
-}
-.sublinhar-tolerancia{
-    border-bottom: 2px solid #ceb8a1; ;
-
-}
-
-button {
-    position: relative;
-    top: 0px;
-    left: 30%;
-    right: 10px;
-    padding: 15px;
-    background-color: #030008;
-    font-weight: 700;
-}
-button:hover{
-    background-color:blue;
-    
 }
 
 .selectors{
@@ -168,31 +112,124 @@ button:hover{
     color: #efe5db;
     font-size: auto;
     text-align: center;
+    justify-content: center;
     
 }
-.boxresultados {
-    content: '0';
+
+/*<--- Faixa de entrada de dados*/
+
+/*faixa de saida de dados --->*/
+.faixa-de-saida{
+    padding: 5vh 3vw 5vh;
+  
+}
+.container-saida{
+    position: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: left; /*Muda o espeço entre <a>CHAVETAS</a> e <nav> elementos da nav</nav>*/
+    align-items: center;
+    font-size: 20px;
+}
+.alinhar-v1 {
     position: relative;
-    top: -1.2rem;
-    left: 350px;
-    width: 80px;
+    margin-left: 100px;
+     
+}
+.alinhar-v2 {
+    position: relative;
+    margin-left: 110px;
+     
+}
+.alinhar-t1 {
+    position: relative;
+    margin-left: 30px;
+     
+}
+.alinhar-t2 {
+    position: relative;
+    margin-left: 20px;
+     
+}
+.sublinhar {
+   
+    border-bottom: 2px solid #ceb8a1;;
+     
+}
+
+.alinhar-tolerancia > p{
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    margin-left: 2px;
+}
+.sublinhar-tolerancia{
+    border-bottom: 2px solid #ceb8a1; ;
+
+}
+
+.grid-1-1-fractions{
+    
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+
+}
+
+
+.boxresultados {
     /*border: 1px solid seagreen;*/
     text-align: center;
-    margin-left: 10px;
 }
-footer {
-   text-align: right;
-}
+
 .nome-tolerancia {
-    position: relative;
-    top: -3rem;
-    left: 420px;
-    width: 80px;
     text-align: center;
     width: 50px;
     height: 25px;
-    background-color: black;
+    
 }
+
+/*<----- faixa de saida de dados*/
+
+/*Information div ---->*/
+
+.grid-1-2-fractions {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr;
+}
+
+.box >img{
+    width: 100%;
+    
+}
+
+.box{
+    padding: 2vw;
+    text-align: left;
+}
+
+
+.turn-around{
+    width: 350px;
+    transition: all 3s;
+    &:hover {
+      transform: rotate(1080deg);
+    }
+    
+}
+
+/*<--- Information div*/
+
+
+footer {
+   text-align: right;
+}
+
 
 .ajust-padding-bottom{
     padding-bottom: 1vh;
@@ -206,8 +243,25 @@ footer {
 }
 
 .invisible-text{
-    color: rgba(161, 165, 165, 0.303);
+    color: rgba(161, 165, 165, 0.034);
 }
+
+.zone-1 {
+  
+    border:2px solid seagreen;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.zone-2 {
+  
+    border:2px solid blue;
+    grid-column-start: 3;
+    grid-column-end: 6;
+    
+}
+
+
 /*
 
 
