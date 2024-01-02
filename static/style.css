@@ -80,7 +80,7 @@ body {
 }
 
 .big-box > img{
-    width: 75%;
+    width: 60%;
 }
 
 /*<---- Imagem das medidas*/
@@ -120,7 +120,13 @@ body {
 
 /*faixa de saida de dados --->*/
 .faixa-de-saida{
-    padding: 5vh 3vw 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5vh 0.5vw 10vh; /*top left  botton right*/
+    width: 100%;
+    height: auto;
   
 }
 .container-saida{
@@ -128,7 +134,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 10px 15px;
+    padding: 10px 15px ;
     display: flex;
     justify-content: left; /*Muda o espeço entre <a>CHAVETAS</a> e <nav> elementos da nav</nav>*/
     align-items: center;
@@ -136,23 +142,40 @@ body {
 }
 .alinhar-v1 {
     position: relative;
-    margin-left: 100px;
+    margin-left: 225px;
      
+}
+.alinhar-profundiade-eixo{
+    position: relative;
+    margin-left: 182px;
 }
 .alinhar-v2 {
     position: relative;
-    margin-left: 110px;
+    margin-left: 235px;
      
+}
+.alinhar-profundiade-cubo{
+    position: relative;
+    margin-left: 168px;
 }
 .alinhar-t1 {
     position: relative;
     margin-left: 30px;
      
 }
+.alinhar-t1-profundidade{
+    position: relative;
+    margin-left: 52px;
+}
+
 .alinhar-t2 {
     position: relative;
     margin-left: 20px;
      
+}
+.alinha-t2-profundidade{
+    position: relative;
+    margin-left: 49px;
 }
 .sublinhar {
    
@@ -168,14 +191,6 @@ body {
 }
 .sublinhar-tolerancia{
     border-bottom: 2px solid #ceb8a1; ;
-
-}
-
-.grid-1-1-fractions{
-    
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
 
 }
 
@@ -204,19 +219,19 @@ body {
 }
 
 .box >img{
-    width: 100%;
+    width: 60%;
     
 }
 
 .box{
-    padding: 2vw;
-    text-align: left;
+    padding: 2vw; 
+    text-align: left; 
 }
 
 
 .turn-around{
     width: 350px;
-    transition: all 3s;
+    transition: all 5s;
     &:hover {
       transform: rotate(1080deg);
     }
@@ -242,22 +257,28 @@ footer {
     padding-right: 30px;
 }
 
+.ajust-margin-left{
+    margin-left: 5vw;
+}
+
+.ajust-margin-right{
+    margin-right: 55px;
+}
+
 .invisible-text{
     color: rgba(161, 165, 165, 0.034);
 }
 
 .zone-1 {
   
-    border:2px solid seagreen;
-    grid-column-start: 1;
-    grid-column-end: 3;
+    border:2px solid seagreen; 
+    
 }
 
 .zone-2 {
   
     border:2px solid blue;
-    grid-column-start: 3;
-    grid-column-end: 6;
+    
     
 }
 

@@ -74,8 +74,8 @@
                 </div>
                     
             </div>
-            <div class="faixa-de-saida grid-1-1-fractions">
-                <div class="zone-1">
+            <div class="faixa-de-saida">
+                <div class=" ajust-margin-right">
                     <div>
                         <div class="container-saida sublinhar">
                             <div>b -   Largua da chaveta: </div>
@@ -85,8 +85,8 @@
 
                     <div >
                         <div class="container-saida sublinhar">
-                        <div>h -   Altura da chaveta:</div> 
-                        <div id="altura" class="alinhar-v2">0</div>
+                            <div>h -   Altura da chaveta:</div> 
+                            <div id="altura" class="alinhar-v2">0</div>
                         </div>
                     </div>
 
@@ -108,24 +108,33 @@
                             <p id="toleranciacuboils" class="">0</p>
                             <p id="toleranciacuboili" class="">0</p>   
                          </div>
-                         
-     
                     </div>
 
                 </div>
 
-               <div class="zone-2">
-                <div class="sublinhar"> <p>t1 -   Profundide no Eixo </p> <div id="t1" class="boxresultados">0</div></div>
-               <div class="sublinhar"><p>t2 -   Profundide no Cubo:</p> <div id="t2" class="boxresultados">0</div></div> 
-               <div class="sublinhar-tolerancia ajust-padding-top"> 
-                    t1 +/- Tolerância da Profundide no Eixo : 
-                    <div id="tolerancia-profundidade-eixofls" class="boxresultados">0</div>
-                    <div id="tolerancia-profundidade-eixofli" class="boxresultados">0</div>
+               <div class="">
+                <div class="container-saida sublinhar"> 
+                    <div>t1 -   Profundidade no Eixo </div> 
+                    <div id="t1" class="alinhar-profundiade-eixo">0</div>
+                </div>
+                <div class="container-saida sublinhar">
+                    <div>t2 -   Profundidade no Cubo:</div>
+                    <div id="t2" class="alinhar-profundiade-cubo">0</div>
+                </div> 
+               <div class="container-saida sublinhar-tolerancia ajust-padding-top"> 
+                    t1 +/- Tolerância da Profundide no Eixo :
+                    <div class="alinhar-t1-profundidade">
+                        <p id="tolerancia-profundidade-eixofls" class="">0</p>
+                        <p id="tolerancia-profundidade-eixofli" class="">0</p>
+                    </div>
+                    
                </div> 
-               <div class="sublinhar-tolerancia ajust-padding-top">
+               <div class="container-saida sublinhar-tolerancia ajust-padding-top">
                     t2 +/- Tolerância da Profundide no Cubo:
-                    <div id="tolerancia-profundidade-cuboils" class="boxresultados">0</div>
-                    <div id="tolerancia-profundidade-cuboili" class="boxresultados">0</div> 
+                    <div class="alinha-t2-profundidade">
+                        <div id="tolerancia-profundidade-cuboils" class="">0</div>
+                        <div id="tolerancia-profundidade-cuboili" class="">0</div>
+                    </div> 
                </div>
 
                </div>
@@ -135,11 +144,12 @@
             </div>
 
     <div id="information" class="grid-1-2-fractions">
-        <div class="box "><img class="turn-around" src="./static/engrenagem.png" alt=""></div>
-        <div class="box "><p>Chavetas são elementos mecanicos que ajudam a transmitir torque entre 
-            elementos rotativos. Existem várias formas de se aplicar uma chaveta em um conjunto cubo/eixo 
-            (retangular, Cabeça quilha e Woodruff [meia-lua]). <p>As medidas acima advem da
-                norma DIN 6885-1</p> 
+        <div class="box zone-1"><img class="turn-around" src="./static/engrenagem.png" alt=""></div>
+        <div class="box "><p>Os dados gerados acima são baseados em tabelas para chavetas do tipo paralela que advem da norma DIN6885-1, a nomeclatura e os valor das tolerancia são encontrados 
+            na norma <a href="https://edisciplinas.usp.br/mod/resource/view.php?id=4975613&forceview=1" >ABNT NBR 5158 </a>.
+            <p>Chavetas são elementos mecanicos que transmitem torque entre eixos e componentes montados em eixos, como engrenagens ou polias. 
+                Elas existem em uma ampla variedade de tipos e estilos, incluindo versões paralelas, Woodruff, cônicas,  e perpendiculares
+                (retangular, Cabeça quilha e Woodruff [meia-lua]).</p> 
         </p></div>
     </div>
     <footer class="header">
