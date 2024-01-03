@@ -74,8 +74,8 @@ function exibirDados (){
         toleranciacuboili.innerHTML = bucarDados()[14]
         document.getElementsByClassName("nome-tolerancia")[0].innerHTML = bucarDados()[12]
         document.getElementsByClassName("nome-tolerancia")[1].innerHTML = bucarDados()[15]
-        altura.style.margin = "0px 0px 0px 235px"
-        largura.style.margin = "0px 0px 0px 225px"
+       // altura.style.margin = "0px 0px 0px 235px"
+        //largura.style.margin = "0px 0px 0px 225px"
        
     }
     else if(tolerancia.value==="FOLGA"){
@@ -85,8 +85,8 @@ function exibirDados (){
         toleranciacuboili.innerHTML = bucarDados()[8]
         document.getElementsByClassName("nome-tolerancia")[0].innerHTML = bucarDados()[6]
         document.getElementsByClassName("nome-tolerancia")[1].innerHTML = bucarDados()[9]
-        altura.style.margin = "0px 0px 0px 215px"
-        largura.style.margin = "0px 0px 0px 205px"
+       // altura.style.margin = "0px 0px 0px 215px"
+       // largura.style.margin = "0px 0px 0px 205px"
     }
     else{
         toleranciaeixofls.innerHTML = bucarDados()[16]
@@ -95,8 +95,8 @@ function exibirDados (){
         toleranciacuboili.innerHTML = bucarDados()[17]
         document.getElementsByClassName("nome-tolerancia")[0].innerHTML = bucarDados()[18]
         document.getElementsByClassName("nome-tolerancia")[1].innerHTML = bucarDados()[18]
-        altura.style.margin = "0px 0px 0px 315px"
-        largura.style.margin = "0px 0px 0px 305px"
+       // altura.style.margin = "0px 0px 0px 315px"
+       // largura.style.margin = "0px 0px 0px 305px"
     }
     
     t1.innerHTML = bucarDados()[19]
