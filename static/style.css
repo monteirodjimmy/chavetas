@@ -220,14 +220,22 @@ body {
 
 .box >img{
     width: 60%;
+
     
 }
 
 .box{
-    padding: 2vw; 
-    text-align: left; 
+    padding: 5px; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
 }
 
+.box-text-left{
+    padding: 2vw;
+    text-align: left;
+
+}
 
 .turn-around{
     width: 350px;
