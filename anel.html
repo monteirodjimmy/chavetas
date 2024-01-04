@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anel Elástico[Anel de Retenção]</title>
     <link rel="stylesheet" href="./static/style.css">
+    <script src="https://kit.fontawesome.com/39742e8165.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="header">
@@ -12,17 +13,169 @@
     
         <nav class="main-nav ">
             <a href="index.html">Chavetas</a>
-            <a href="anel.html">Anel Elástico[Anel de Retenção]</a>
+            <a href="anel.html">Anel Elástico [Anel de Retenção]</a>
             <a href="about.html">Sobre</a>
         </nav>
       </header>
       <div class="conteiner">
+
+        <div class="conteiner">
+            <div class="big-box" ><img src="./static/anel_dimentions_02.png"></div>
+            <div id="dadosdiametro" class="faixa-de-entrada">
+                <div class="">
+                    <h3>Escolha o Diâmetro do Eixo:
+                        <p class="invisible-text">.</p>
+                    </h3>
+                    
+                    <form id="diameter-anel-form" method="get">
+                        <select class="selectors" id="diametros">
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">4</option>
+                            <option value="6">6</option>
+                            <option value="7">8</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="12">12</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="22">22</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="28">28</option>
+                            <option value="260-290">260-290</option>
+                            <option value="290-330">290-330</option>
+                            <option value="330-380">330-380</option>
+                            <option value="380-440">380-440</option>
+                            <option value="440-500">440-500</option>
+
+                        </select>
+                        </form>
+                </div>
+
+                <div class="ajust-padding-left-right">
+                   <h3>
+                    Anel de Retenção para:<br>
+                    <p class="invisible-text">.</p>
+                   </h3> 
+                
+                    <form id="tipo-anel-form" method="get">
+                        <select class="selectors" id="tolerancia">
+                            <option value="EIXO">EIXO</option>
+                            <option value="FUROS">FUROS</option>
+                        </select>
+                        </form>
+                </div>
+                    
+            </div>
+            <div class="faixa-de-saida">
+                <div class=" ajust-margin-right">
+                    <div>
+                        <div class="container-saida sublinhar">
+                            <div>b -   Largua da chaveta: </div>
+                            <div class="alinhar-v1 " id="largura">0</div>
+                        </div> 
+                    </div>
+
+                    <div >
+                        <div class="container-saida sublinhar">
+                            <div>h -   Altura da chaveta:</div> 
+                            <div id="altura" class="alinhar-v2">0</div>
+                        </div>
+                    </div>
+
+                    <div class="container-saida sublinhar-tolerancia ajust-padding-top"> 
+                        <div> b +/- Tolerância rasgo do Eixo (<span class="tipo-tolerancia" >NORMAL</span>): </div>  
+                        <div class="nome-tolerancia alinhar-t1"></div>
+
+                        <div>
+                            <p id="toleranciaeixofls" class="">0</p>
+                            <p id="toleranciaeixofli" >0</p>
+                        </div>
+                        
+                         
+                    </div> 
+                    <div class=" container-saida sublinhar-tolerancia ajust-padding-top">
+                         b +/- Tolerância rasgo do Cubo (<span class="tipo-tolerancia">NORMAL</span>):
+                         <div class="nome-tolerancia alinhar-t2"></div>
+                         <div class="">
+                            <p id="toleranciacuboils" class="">0</p>
+                            <p id="toleranciacuboili" class="">0</p>   
+                         </div>
+                    </div>
+
+                </div>
+
+               <div class="">
+                <div class="container-saida sublinhar"> 
+                    <div>t1 -   Profundidade no Eixo </div> 
+                    <div id="t1" class="alinhar-profundiade-eixo">0</div>
+                </div>
+                <div class="container-saida sublinhar">
+                    <div>t2 -   Profundidade no Cubo:</div>
+                    <div id="t2" class="alinhar-profundiade-cubo">0</div>
+                </div> 
+               <div class="container-saida sublinhar-tolerancia ajust-padding-top"> 
+                    t1 +/- Tolerância da Profundide no Eixo :
+                    <div class="nome-tolerancia"></div> <!-- gambiarra para adicionar espaços para entre essas tolerancias e o texto, como não adicionei nada a essa posição na matriz no JS não vai imprimir nada aqui. -->
+                    <div class="alinhar-t1-profundidade">
+                        <p id="tolerancia-profundidade-eixofls" class="">0</p>
+                        <p id="tolerancia-profundidade-eixofli" class="">0</p>
+                    </div>
+                    
+               </div> 
+               <div class="container-saida sublinhar-tolerancia ajust-padding-top">
+                    t2 +/- Tolerância da Profundide no Cubo:
+                    <div class="alinha-t2-profundidade">
+                        <div id="tolerancia-profundidade-cuboils" class="">0</div>
+                        <div id="tolerancia-profundidade-cuboili" class="">0</div>
+                    </div> 
+               </div>
+
+               </div>
+            
+            </div>
+
+            </div>
+
+    <div id="information" class="grid-1-2-fractions">
+        <div class="box"><img class="turn-scale" src="./static/anel_isometrico_01.png" alt=""></div>
+        <div class="box-text-left">
+            <p>
+                NBR16100 de 02/2013 (https://www.normas.com.br/autorizar/visualizacao-nbr/32308/identificar/visitante) --- DIN 742
+                Os dados gerados acima são baseados em tabelas para chavetas do tipo paralela que advem da norma DIN6885-1, a nomeclatura e os valor das tolerancia são encontrados 
+            na norma <a href="https://edisciplinas.usp.br/mod/resource/view.php?id=4975613&forceview=1" >ABNT NBR 5158 </a>.
+            <p>Chavetas são elementos mecanicos que transmitem torque entre eixos e componentes montados em eixos, como engrenagens ou polias. 
+                Elas existem em uma ampla variedade de tipos e estilos, incluindo chavetas paralelas, Woodruff, afunilada (cônicas).</p>
+                
+                Uma chaveta paralela é de seção transversal quadrada ou retangular e de altura e largura constante ao longo do seu comprimento. 
+                As chavetas paralelas são as mais usadas. As chavetas paralelas são feitas tipicamente de barras padronizadas laminadas a frio, as quais, convesionalmente tem 
+                "tolerância negativa", querendo dizer que ela não será jamias maior que sua dimensão nominal, somente menor. [Norton, Robert L. Projeto de máquinas: uma abordagem intregada
+                : Bookman,2013 p.570]
+                <p>Há dois modos de falhas em chaveta: por cisalhamento e por esmagamento.</p> 
+
+            </p>
+    </div>
+    </div>
         
-            <<div class="big-box" ><img src="./static/chavetas_dimentions_01.png"></div>
         
     </div>
-      <footer>Made by -> Mateus M. Rodigues [Eng. Mecânico]</footer>
+      <footer>
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/mateusm-rodrigues" class="icon fa-brands fa-linkedin"><span class="label">Twitter</span></a>
+            <a href="https://github.com/monteirodjimmy" class="icon fa-brands fa-github"><span class="label">GitHub</span></a>
+        </div>
+        Made by -> Mateus M. Rodrigues [Eng. Mecânico]
+      </footer>
       <script type="text/javascript" src="./static/script.js"></script>
+      <script type="text/javascript" src="./static/script_anel.js"></script>
     
 </body>
 </html>
