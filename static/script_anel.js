@@ -1,14 +1,22 @@
 //botoes
-var diameter_anel_form = document.getElementById("diameter-form");
+var diameter_anel_form = document.getElementById("diameter-anel-form");
 var tipo_anel_form = document.getElementById("tipo-anel-form")
-
+//entradas
+var diametros = document.getElementById("diametros")
+console.log(parseInt(diametros.value))
+var tipo = document.getElementById("tipo")
+console.log(tipo.value)
 //saidas
-var intdiametro = document.getElementById("diametros");
-var tolerancia = document.getElementById("tolerancia")
-var largura = document.getElementById("largura");
-var altura = document.getElementById("altura");
+var D3 = document.getElementById("D3");
+var D4 = document.getElementById("D4")
+var D2 = document.getElementById("D2");
+var M = document.getElementById("M");
 
-//  [0    1         2        3      4      5    6     7    8        9 ]
+//manipulação de imagens
+imagem = document.getElementById("img-anel")
+
+
+//  [0    1         2        3      4      5          6       7      9 ]
 var norma = [
     
     [1.9, 	0.8, 	3,  	2.8,  	2.7,  	7,    	1,   	0.4,	0.5],
@@ -46,11 +54,20 @@ var norma = [
     
 ];
 
-//const filterArray = array.filter((num)=> num === intdiametro.value)
+
+/*
+for (var i=0; i < norma.length; i++) {
+    if (norma[i][2] === parseInt(diametros.value)){
+        console.log(norma[i])
+        var chavetaVetorDados = norma [i];
+    } 
+}
+*/
+
 
 function bucarDados(){
     for (var i=0; i < norma.length; i++) {
-        if (norma[i][2] === intdiametro.value){
+        if (norma[i][2] === parseInt(diametros.value)){
             //console.log(norma[i])
             var chavetaVetorDados = norma [i];
             return chavetaVetorDados
@@ -58,61 +75,34 @@ function bucarDados(){
     }
 }
 
+console.log(bucarDados()[8])
+
+
 function exibirDados (){
     
-    largura.innerHTML = bucarDados()[1]
-    altura.innerHTML = bucarDados()[2]
-    if (tolerancia.value==="NORMAL"){
-
-        toleranciaeixofls.innerHTML = bucarDados()[10]
-        toleranciaeixofli.innerHTML = bucarDados()[11]
-        toleranciacuboils.innerHTML = bucarDados()[13]
-        toleranciacuboili.innerHTML = bucarDados()[14]
-        document.getElementsByClassName("nome-tolerancia")[0].innerHTML = bucarDados()[12]
-        document.getElementsByClassName("nome-tolerancia")[1].innerHTML = bucarDados()[15]
-       
+    if (tipo.value==="EIXO"){
+        D2.innerHTML = bucarDados()[3]
+        M.innerHTML = bucarDados()[8]
+        D3.innerHTML = bucarDados()[4]
+        D4.innerHTML = bucarDados()[5]
+        imagem.setAttribute('src','./static/anel_dimentions_04.png')
     }
-    else if(tolerancia.value==="FOLGA"){
-        toleranciaeixofls.innerHTML = bucarDados()[4]
-        toleranciaeixofli.innerHTML = bucarDados()[5]
-        toleranciacuboils.innerHTML = bucarDados()[7]
-        toleranciacuboili.innerHTML = bucarDados()[8]
-        document.getElementsByClassName("nome-tolerancia")[0].innerHTML = bucarDados()[6]
-        document.getElementsByClassName("nome-tolerancia")[1].innerHTML = bucarDados()[9]
-       // altura.style.margin = "0px 0px 0px 215px"
-       // largura.style.margin = "0px 0px 0px 205px"
+    else if (tipo.value ==="FURO"){ //vou pegar de outra tabela
+        D2.innerHTML = "sem tabela"
+        M.innerHTML = "sem tabela"
+        D3.innerHTML = "sem tabela"
+        D4.innerHTML = "sem tabela"
+        imagem.setAttribute('src','./static/anel_interno_dimentions_01.png')
     }
-    else{
-        toleranciaeixofls.innerHTML = bucarDados()[16]
-        toleranciaeixofli.innerHTML = bucarDados()[17]
-        toleranciacuboils.innerHTML = bucarDados()[16]
-        toleranciacuboili.innerHTML = bucarDados()[17]
-        document.getElementsByClassName("nome-tolerancia")[0].innerHTML = bucarDados()[18]
-        document.getElementsByClassName("nome-tolerancia")[1].innerHTML = bucarDados()[18]
-       // altura.style.margin = "0px 0px 0px 315px"
-       // largura.style.margin = "0px 0px 0px 305px"
-    }
-    
-    t1.innerHTML = bucarDados()[19]
-    t2.innerHTML = bucarDados()[22]
-    t1_toleranciaeixofls.innerHTML = bucarDados()[20]
-    t1_toleranciaeixofli.innerHTML = bucarDados()[21]
-    t2_toleranciacuboils.innerHTML = bucarDados()[20]
-    t2_toleranciacuboili.innerHTML = bucarDados()[21]
-
-
-     console.log(intdiametro.value)
 
 };
 
-tipo_anel__form.addEventListener("click", function(){
+tipo_anel_form.addEventListener("click", function(){
         //vou mudar o src da imagem de cima aqui
-       
         exibirDados()
 })
 
-diameter_form.addEventListener("click",function(){  
+diameter_anel_form.addEventListener("click",function(){  
      exibirDados()
     })
 
-    

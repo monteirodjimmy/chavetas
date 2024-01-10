@@ -20,7 +20,7 @@
       <div class="conteiner">
 
         <div class="conteiner">
-            <div class="big-box" ><img src="./static/anel_dimentions_02.png"></div>
+            <div class="big-box" ><img id="img-anel" src="./static/anel_dimentions_04.png"></div>
             <div id="dadosdiametro" class="faixa-de-entrada">
                 <div class="">
                     <h3>Escolha o Diâmetro do Eixo:
@@ -31,7 +31,7 @@
                         <select class="selectors" id="diametros">
                             <option value="3">3</option>
                             <option value="4">4</option>
-                            <option value="5">4</option>
+                            <option value="5">5</option>
                             <option value="6">6</option>
                             <option value="7">8</option>
                             <option value="8">8</option>
@@ -50,11 +50,11 @@
                             <option value="25">25</option>
                             <option value="26">26</option>
                             <option value="28">28</option>
-                            <option value="260-290">260-290</option>
-                            <option value="290-330">290-330</option>
-                            <option value="330-380">330-380</option>
-                            <option value="380-440">380-440</option>
-                            <option value="440-500">440-500</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                            <option value="32">32</option>
+                            <option value="33">33</option>
+                            <option value="34">34</option>
 
                         </select>
                         </form>
@@ -67,9 +67,9 @@
                    </h3> 
                 
                     <form id="tipo-anel-form" method="get">
-                        <select class="selectors" id="tolerancia">
+                        <select class="selectors" id="tipo">
                             <option value="EIXO">EIXO</option>
-                            <option value="FUROS">FUROS</option>
+                            <option value="FURO">FURO</option>
                         </select>
                         </form>
                 </div>
@@ -79,66 +79,29 @@
                 <div class=" ajust-margin-right">
                     <div>
                         <div class="container-saida sublinhar">
-                            <div>b -   Largua da chaveta: </div>
-                            <div class="alinhar-v1 " id="largura">0</div>
+                            <div>D2 -   Diâmetro Interno do rasgo: </div>
+                            <div class="alinhar-v1 " id="D2">0</div>
                         </div> 
                     </div>
 
                     <div >
                         <div class="container-saida sublinhar">
-                            <div>h -   Altura da chaveta:</div> 
-                            <div id="altura" class="alinhar-v2">0</div>
+                            <div>M - Comprimento do rasgo   :</div> 
+                            <div id="M" class="alinhar-v2">0</div>
                         </div>
                     </div>
-
-                    <div class="container-saida sublinhar-tolerancia ajust-padding-top"> 
-                        <div> b +/- Tolerância rasgo do Eixo (<span class="tipo-tolerancia" >NORMAL</span>): </div>  
-                        <div class="nome-tolerancia alinhar-t1"></div>
-
-                        <div>
-                            <p id="toleranciaeixofls" class="">0</p>
-                            <p id="toleranciaeixofli" >0</p>
-                        </div>
-                        
-                         
-                    </div> 
-                    <div class=" container-saida sublinhar-tolerancia ajust-padding-top">
-                         b +/- Tolerância rasgo do Cubo (<span class="tipo-tolerancia">NORMAL</span>):
-                         <div class="nome-tolerancia alinhar-t2"></div>
-                         <div class="">
-                            <p id="toleranciacuboils" class="">0</p>
-                            <p id="toleranciacuboili" class="">0</p>   
-                         </div>
-                    </div>
-
                 </div>
 
                <div class="">
                 <div class="container-saida sublinhar"> 
-                    <div>t1 -   Profundidade no Eixo </div> 
-                    <div id="t1" class="alinhar-profundiade-eixo">0</div>
+                    <div>D3 -   Diâmetro Interno do anel : </div> 
+                    <div id="D3" class="alinhar-profundiade-eixo">0</div>
                 </div>
                 <div class="container-saida sublinhar">
-                    <div>t2 -   Profundidade no Cubo:</div>
-                    <div id="t2" class="alinhar-profundiade-cubo">0</div>
+                    <div>D4 -   Diâmetro externo do anel :</div>
+                    <div id="D4" class="alinhar-profundiade-cubo">0</div>
                 </div> 
-               <div class="container-saida sublinhar-tolerancia ajust-padding-top"> 
-                    t1 +/- Tolerância da Profundide no Eixo :
-                    <div class="nome-tolerancia"></div> <!-- gambiarra para adicionar espaços para entre essas tolerancias e o texto, como não adicionei nada a essa posição na matriz no JS não vai imprimir nada aqui. -->
-                    <div class="alinhar-t1-profundidade">
-                        <p id="tolerancia-profundidade-eixofls" class="">0</p>
-                        <p id="tolerancia-profundidade-eixofli" class="">0</p>
-                    </div>
-                    
-               </div> 
-               <div class="container-saida sublinhar-tolerancia ajust-padding-top">
-                    t2 +/- Tolerância da Profundide no Cubo:
-                    <div class="alinha-t2-profundidade">
-                        <div id="tolerancia-profundidade-cuboils" class="">0</div>
-                        <div id="tolerancia-profundidade-cuboili" class="">0</div>
-                    </div> 
-               </div>
-
+            
                </div>
             
             </div>
@@ -174,7 +137,6 @@
         </div>
         Made by -> Mateus M. Rodrigues [Eng. Mecânico]
       </footer>
-      <script type="text/javascript" src="./static/script.js"></script>
       <script type="text/javascript" src="./static/script_anel.js"></script>
     
 </body>
