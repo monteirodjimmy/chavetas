@@ -148,11 +148,14 @@ tipo_anel_form.addEventListener("click", function(){
         //vou mudar o src da imagem de cima aqui
         if (tipo.value==="EIXO"){
              //vou ter que voltar o Inner HTML para o anterior aqui
+            diametros.innerHTML = ' <option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">8</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="12">12</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="22">22</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="28">28</option><option value="30">30</option><option value="31">31</option><option value="32">32</option><option value="33">33</option><option value="34">34</option>'
+            document.getElementById("diametro_int_ext").innerText = "D4 -   Diâmetro externo do anel :"
             imagem.setAttribute('src','./static/anel_dimentions_04.png')
         }
         else if (tipo.value ==="FURO"){ 
            
             diametros.innerHTML = '<option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="12">12</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="22">22</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="28">28</option><option value="30">30</option><option value="31">31</option><option value="32">32</option><option value="33">33</option><option value="34">34</option>'
+            document.getElementById("diametro_int_ext").innerText = "D4 -   Diâmetro interno do anel :"
             imagem.setAttribute('src','./static/anel_interno_dimentions_02.png')
             //tem que mudar o Inner HTML ou Inner Text do D4- Diâmtro externo do anel:
         }
